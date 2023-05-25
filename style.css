@@ -1,0 +1,220 @@
+/* CSS Reset  */
+* {
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+/* Navbar  */
+#navbar {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	padding: 8px;
+}
+#navbar ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+#navbar ul li {
+	list-style: none;
+	margin: 12px 30px;
+}
+#navbar ul li a {
+	cursor: pointer;
+	color: white;
+	font-size: 1.2rem;
+	font-family: "Roboto Mono", monospace;
+	font-weight: bold;
+	border-radius: 15px;
+	padding: 3px 10px;
+	text-decoration: none;
+}
+#navbar ul li a:hover {
+	background-color: gray;
+}
+#logo {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 55px;
+	width: 55px;
+	padding: 2px 15px;
+	align-items: center;
+	justify-content: center;
+}
+#logo img {
+	overflow: hidden;
+}
+
+/* Main Section  */
+#main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 90px 0px;
+	width: 100%;
+}
+#main::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	height: 562px;
+	width: 100%;
+	background: url(img/fruit2.jpg) no-repeat center center/cover;
+	opacity: 0.9;
+}
+#main #header {
+	margin: 0px;
+	font-size: 4rem;
+	color: white;
+	font-family: "Kalam", cursive;
+}
+#main p {
+	text-align: center;
+	width: 42%;
+	font-size: 1.2rem;
+	color: white;
+	padding: 70px;
+	font-family: "Roboto Mono", monospace;
+}
+
+/* Services  */
+#services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(242 242 242);
+}
+#services #services-container {
+	/* border: 2px solid blue; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#services #services-container .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* border: 2px solid orange; */
+	border-radius: 20px;
+	background-color: #e4e4e4;
+	margin: 40px;
+	width: 60%;
+	box-shadow: 2px 2px 2px 2px #cccccc, -2px -2px 2px 2px #cccccc;
+}
+#services-container .item p {
+	width: 70%;
+	padding: 20px;
+	font-family: "Roboto Mono", monospace;
+}
+#services #item1 {
+	width: 420px;
+	padding: 15px 0px;
+}
+#services #item2 {
+	height: 250px;
+	padding: 20px 0px;
+}
+.item-h {
+	font-family: "Roboto Mono", monospace;
+	font-size: 1.5rem;
+}
+
+/* Partners Section  */
+#partners {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff9ed;
+}
+#partners #partners-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 2px 2px 2px 2px #cccccc, -2px -2px 2px 2px #cccccc;
+	border-radius: 20px;
+	background-color: white;
+	margin-bottom: 60px;
+	width: 68%;
+}
+#partners #partners-container .partner-item {
+	padding: 0px 35px;
+}
+#partners img {
+	width: 300px;
+}
+
+/* Contact us Section  */
+#contact-us {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #dfe7ff;
+	padding-bottom: 50px;
+}
+#contact-us-container form {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 2px 2px 2px #cccccc, -2px -2px 2px 2px #cccccc;
+	border-radius: 20px;
+	padding: 100px;
+	background-color: white;
+	font-family: "Roboto Mono", monospace;
+}
+#contact-us-container .input-group {
+	display: flex;
+	flex-direction: column;
+}
+#contact-us-container input {
+	line-height: 30px;
+	width: 500px;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px 0px;
+	font-family: "Roboto Mono", monospace;
+}
+
+/* Footer  */
+footer {
+	background-color: black;
+	color: white;
+	font-family: "Roboto Mono", monospace;
+	text-align: center;
+	font-size: 0.9rem;
+}
+/* Utility Classes  */
+.main-h2 {
+	font-family: "Roboto Mono", monospace;
+	font-weight: bold;
+	font-size: 2.2rem;
+	padding: 50px 0px;
+}
+.submit-btn {
+	line-height: 20px;
+	width: 514px;
+	border: none;
+	font-size: 1.1rem;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px 0px;
+	color: white;
+	background-color: #3f3f3f;
+	font-family: "Roboto Mono", monospace;
+	cursor: pointer;
+	margin-top: 25px;
+}
+.submit-btn:hover {
+	background-color: #575656;
+}
